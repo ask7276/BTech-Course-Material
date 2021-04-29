@@ -1,0 +1,94 @@
+<title>Vdbench rwext4/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+18:07:09.292 input argument scanned: '-fToTestReadWriteExt4'
+18:07:09.292 input argument scanned: '-orwext4'
+18:07:09.293 java.vendor                   Private Build
+18:07:09.293 java.home                     /usr/lib/jvm/java-8-openjdk-amd64/jre
+18:07:09.293 java.vm.specification.version 1.8
+18:07:09.293 java.vm.version               25.275-b01
+18:07:09.293 java.vm.vendor                Private Build
+18:07:09.293 java.specification.version    1.8
+18:07:09.293 java.class.version            52.0
+18:07:09.293 user.name                     root
+18:07:09.293 user.dir                      /home/aryan/Pictures/Assignment-4/vdbench
+18:07:09.293 java.io.tmpdir                /tmp
+18:07:09.294 java.class.path               ./:./classes:./vdbench.jar
+18:07:09.294 os.name                       Linux
+18:07:09.294 os.arch                       amd64
+18:07:09.294 os.version                    5.4.0-55-generic
+18:07:09.294 sun.arch.data.model           64
+18:07:09.300 Flushing all reports
+18:07:09.340 Creating anchor for /media/aryan/ext4sample,fsd=fsd1
+18:07:09.369 rd1 fsd to format: fsd1
+18:07:09.369 rd1 format on host: localhost
+18:07:09.374 Anchor size: anchor=/media/aryan/ext4sample: dirs:            6; files:            8; bytes:   400.000m (419,430,400)
+18:07:09.491 Starting slave: /home/aryan/Pictures/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-18.07.09.242 -l localhost-0 -p 5570   
+18:07:09.756 Slave localhost-0 (pid  47662) connected to master 47620
+18:07:09.774 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_914424520">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_110718392">rd1 For loops: None</A>
+
+18:07:09.932 Flushing all reports
+18:07:09.933 slv=localhost-0 fwd=format fsd=fsd1 anchor=/media/aryan/ext4sample threads= 8 skew= 0.00 operation=read 
+18:07:09.963 Waiting for synchronization of all slaves
+18:07:10.263 Synchronization of all slaves complete
+
+<a name="_914424520"></a><i><b>18:07:11.002 Starting RD=format_for_rd1</b></i>
+
+18:07:11.257 localhost-0: anchor=/media/aryan/ext4sample mkdir complete.
+18:07:11.389 localhost-0: anchor=/media/aryan/ext4sample create complete.
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+18:07:12.057            1 3200.0  0.257  37.7 8.22   0.0    0.0  0.000 3200.0  0.257  0.00 400.0 400.00  131072   6.0  0.050   6.0  0.055   8.0 113.59   8.0  1.779   8.0  0.096   8.0  8.699
+18:07:12.107      avg_2-1    NaN  0.000   NaN  NaN   0.0    NaN  0.000    NaN  0.000   NaN   NaN    NaN       0   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000
+18:07:12.107      std_2-1                                                                                                                                                                    
+18:07:12.108      max_2-1                                                                                                                                                                    
+18:07:12.233 
+18:07:12.233 Miscellaneous statistics:
+18:07:12.233 (These statistics do not include activity between the last reported interval and shutdown.)
+18:07:12.233 FILE_CREATES        Files created:                                    8          8/sec
+18:07:12.233 DIRECTORY_CREATES   Directories created:                              6          6/sec
+18:07:12.233 FILE_DELETES        Files deleted:                                    8          8/sec
+18:07:12.234 DIRECTORY_DELETES   Directories deleted:                              6          6/sec
+18:07:12.234 WRITE_OPENS         Files opened for write activity:                  8          8/sec
+18:07:12.234 DIR_EXISTS          Directory may not exist (yet):                    5          5/sec
+18:07:12.234 FILE_CLOSES         Close requests:                                   8          8/sec
+18:07:12.234 
+18:07:12.234 Flushing all reports
+18:07:12.235 Java Heap in MB. max:  455.500; current:   77.500; used:   19.876; free:   57.624
+18:07:12.265 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/media/aryan/ext4sample threads= 2 skew= 0.00 operation=read 
+18:07:12.269 Waiting for synchronization of all slaves
+18:07:12.370 Synchronization of all slaves complete
+
+<a name="_110718392"></a><i><b>18:07:13.000 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+18:07:14.021            1   71.0  0.031  33.3 6.79  49.3   35.0  0.021   36.0  0.040  0.41  0.42   0.83   12288   0.0  0.000   0.0  0.000   0.0  0.000   2.0  0.250   0.0  0.000   0.0  0.000
+18:07:15.011            2   91.0  0.025  23.8 5.12  52.7   48.0  0.018   43.0  0.032  0.56  0.50   1.07   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:16.012            3  114.0  0.025  21.7 4.26  51.8   59.0  0.017   55.0  0.034  0.69  0.64   1.34   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:17.009            4  102.0  0.026  25.1 4.82  50.0   51.0  0.016   51.0  0.035  0.60  0.60   1.20   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:18.008            5   89.0  0.027  23.6 5.56  57.3   51.0  0.019   38.0  0.037  0.60  0.45   1.04   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:19.009            6  112.0  0.031  22.3 5.08  42.9   48.0  0.021   64.0  0.039  0.56  0.75   1.31   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:20.009            7  109.0  0.032  23.5 5.58  43.1   47.0  0.020   62.0  0.042  0.55  0.73   1.28   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:21.016            8   90.0  2.580  31.5 5.31  41.1   37.0  0.019   53.0  4.368  0.43  0.62   1.05   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:22.030            9   97.0  0.622  34.4 6.32  44.3   43.0  0.043   54.0  1.082  0.50  0.63   1.14   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:23.009           10  100.0  0.033  28.3 6.00  48.0   48.0  0.020   52.0  0.046  0.56  0.61   1.17   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:23.017     avg_2-10  100.4  0.346  26.0 5.34  47.8   48.0  0.021   52.4  0.644  0.56  0.61   1.18   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:07:23.018     std_2-10                                   6.0  0.048    8.2  7.369                                                                                                         
+18:07:23.019     max_2-10                                  59.0  0.986   64.0 110.96                                                                          0.353                          
+18:07:23.242 
+18:07:23.242 Miscellaneous statistics:
+18:07:23.242 (These statistics do not include activity between the last reported interval and shutdown.)
+18:07:23.242 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+18:07:23.242 FILE_BUSY           File busy:                                        2          0/sec
+18:07:23.242 
+18:07:23.242 Flushing all reports
+18:07:23.243 Java Heap in MB. max:  455.500; current:   77.500; used:   41.488; free:   36.012
+18:07:23.272 Ending Reporter
+18:07:24.034 Vdbench execution completed successfully. Output directory: /home/aryan/Pictures/Assignment-4/vdbench/rwext4 
+
+18:07:25.038 Java Heap in MB. max:  455.500; current:   77.500; used:   16.597; free:   60.903

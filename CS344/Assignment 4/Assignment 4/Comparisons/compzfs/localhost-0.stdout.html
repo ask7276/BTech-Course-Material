@@ -1,0 +1,99 @@
+<title>Vdbench compzfs/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+18:11:32.607 18:11:32.606 SlaveJvm execution parameter:  '-m localhost'
+18:11:32.607 18:11:32.606 SlaveJvm execution parameter:  '-n localhost-10-201125-18.11.32.219'
+18:11:32.607 18:11:32.606 SlaveJvm execution parameter:  '-l localhost-0'
+18:11:32.607 18:11:32.606 SlaveJvm execution parameter:  '-p 5570'
+18:11:32.608 18:11:32.606 SlaveJvm positional parameter: 'SlaveJvm'
+18:11:32.749 18:11:32.748 successfully connected to master localhost
+18:11:32.749 18:11:32.749 Connection to localhost using port 5570 successful
+18:11:32.925 18:11:32.925 ticks_per_second: 100
+18:11:32.935 18:11:32.934 execute(): ls -l /mp
+18:11:32.955 18:11:32.955 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_914424520">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_110718392">rd1 For loops: None</A>
+
+18:11:33.121 18:11:33.121 Beginning of run setup
+18:11:33.121 18:11:33.121 File '/var/log/messages' does not exist. Monitoring bypassed
+18:11:33.122 18:11:33.121 **********************
+18:11:33.122 
+18:11:33.122 
+18:11:33.122 18:11:33.121 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:11:33.178 18:11:33.178 Deleting old file structure.
+18:11:33.180 18:11:33.179 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+18:11:33.184 18:11:33.184 Completed the creation of the directory list for /mp: 6 directories.
+18:11:33.185 18:11:33.185 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:11:33.185 18:11:33.185 Writing control file for anchor=/mp at start of run.
+18:11:33.194 18:11:33.193 Completed control file for anchor=/mp at start of run.  dirs: 6/0 files: 8/0 sizes: 400m/0/0/0
+18:11:33.199 18:11:33.198 Completed initializeFileAnchor for fsd1: 0.02
+18:11:33.219 18:11:33.219 Started 8 threads for fwd=format,fsd=fsd1
+18:11:33.220 18:11:33.219 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+18:11:33.220 18:11:33.219 Waiting for task synchronization
+18:11:33.220 18:11:33.219 Requesting full garbage collection
+18:11:33.220 18:11:33.220 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    30 free:    93 
+18:11:33.249 18:11:33.248 GcTracker: cum:   2 intv:  2 ms:      26 mss:  0.00% Heap_MB max:   911 curr:   123 used:    17 free:   106 
+18:11:33.249 18:11:33.248 task_wait_start_complete() end
+
+<a name="_914424520"></a><i><b>18:11:34.002 Starting RD=format_for_rd1</b></i>
+
+18:11:34.003 18:11:34.003 task_run_all(): 9 tasks
+18:11:34.320 18:11:34.320 Message to master: anchor=/mp mkdir complete.
+18:11:34.566 18:11:34.566 Message to master: anchor=/mp create complete.
+18:11:34.572 18:11:34.571 
+18:11:34.572 18:11:34.571 Miscellaneous statistics:
+18:11:34.572 18:11:34.572 FILE_CREATES        Files created:                                    8
+18:11:34.572 18:11:34.572 DIRECTORY_CREATES   Directories created:                              6
+18:11:34.572 18:11:34.572 FILE_DELETES        Files deleted:                                    8
+18:11:34.573 18:11:34.573 DIRECTORY_DELETES   Directories deleted:                              6
+18:11:34.573 18:11:34.573 WRITE_OPENS         Files opened for write activity:                  8
+18:11:34.573 18:11:34.573 DIR_EXISTS          Directory may not exist (yet):                    5
+18:11:34.573 18:11:34.573 FILE_CLOSES         Close requests:                                   8
+18:11:34.573 18:11:34.573 
+18:11:34.574 18:11:34.573 Java Heap in MB. max:  910.500; current:  123.000; used:   25.250; free:   97.750
+18:11:34.574 18:11:34.574 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+18:11:35.122 18:11:35.122 Writing control file for anchor=/mp at end of run.
+18:11:35.129 18:11:35.129 Completed control file for anchor=/mp at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/8/400m
+18:11:35.130 18:11:35.130 End of run
+18:11:35.130 18:11:35.130 **********
+18:11:35.130 
+18:11:35.131 
+18:11:35.256 18:11:35.256 Beginning of run setup
+18:11:35.256 18:11:35.256 **********************
+18:11:35.256 
+18:11:35.257 
+18:11:35.299 18:11:35.298 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+18:11:35.300 18:11:35.299 Reading control file for anchor=/mp
+18:11:35.301 18:11:35.300 Completed reading control file.
+18:11:35.301 18:11:35.301 Completed the creation of the directory list for /mp: 6 directories.
+18:11:35.301 18:11:35.301 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:11:35.301 18:11:35.301 No deletes and creates. Control file not cleared.
+18:11:35.301 18:11:35.301 During anchor creation for anchor=/mp there were 6 directories and 8 files
+18:11:35.301 18:11:35.301 Completed initializeFileAnchor for fsd1: 0.00
+18:11:35.304 18:11:35.304 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+18:11:35.305 18:11:35.304 Started 2 FwgThreads for rd=rd1 For loops: None
+18:11:35.305 18:11:35.304 Waiting for task synchronization
+18:11:35.305 18:11:35.304 Requesting full garbage collection
+18:11:35.305 18:11:35.305 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    29 free:    94 
+18:11:35.330 18:11:35.329 GcTracker: cum:   4 intv:  2 ms:      23 mss:  0.00% Heap_MB max:   911 curr:   123 used:    16 free:   107 
+18:11:35.330 18:11:35.329 task_wait_start_complete() end
+
+<a name="_110718392"></a><i><b>18:11:36.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+18:11:36.002 18:11:36.002 task_run_all(): 3 tasks
+18:11:46.148 18:11:46.147 
+18:11:46.148 18:11:46.147 Miscellaneous statistics:
+18:11:46.148 18:11:46.148 WRITE_OPENS         Files opened for write activity:                  2
+18:11:46.148 18:11:46.148 FILE_CLOSES         Close requests:                                   2
+18:11:46.148 18:11:46.148 
+18:11:46.149 18:11:46.148 Java Heap in MB. max:  910.500; current:  123.000; used:   20.021; free:  102.979
+18:11:46.149 18:11:46.149 Maximum native memory allocation:    1,146,880; Current allocation:       98,304
+18:11:46.149 18:11:46.149 Writing control file for anchor=/mp at end of run.
+18:11:46.158 18:11:46.157 Completed control file for anchor=/mp at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/2/100m
+18:11:46.158 18:11:46.158 End of run
+18:11:46.158 18:11:46.158 **********
+18:11:46.158 
+18:11:46.158 
+18:11:47.032 18:11:47.032 Master is requesting slave shutdown
+18:11:47.033 18:11:47.032 Java Heap in MB. max:  910.500; current:  123.000; used:   20.882; free:  102.118

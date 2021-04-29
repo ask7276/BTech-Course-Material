@@ -1,0 +1,99 @@
+<title>Vdbench compext4/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+18:09:29.905 18:09:29.904 SlaveJvm execution parameter:  '-m localhost'
+18:09:29.906 18:09:29.905 SlaveJvm execution parameter:  '-n localhost-10-201125-18.09.29.528'
+18:09:29.906 18:09:29.905 SlaveJvm execution parameter:  '-l localhost-0'
+18:09:29.906 18:09:29.905 SlaveJvm execution parameter:  '-p 5570'
+18:09:29.907 18:09:29.905 SlaveJvm positional parameter: 'SlaveJvm'
+18:09:30.057 18:09:30.056 successfully connected to master localhost
+18:09:30.058 18:09:30.057 Connection to localhost using port 5570 successful
+18:09:30.270 18:09:30.270 ticks_per_second: 100
+18:09:30.278 18:09:30.278 execute(): ls -l /media/aryan/ext4sample
+18:09:30.299 18:09:30.299 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_914424520">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_110718392">rd1 For loops: None</A>
+
+18:09:30.460 18:09:30.459 Beginning of run setup
+18:09:30.460 18:09:30.460 **********************
+18:09:30.461 
+18:09:30.462 
+18:09:30.462 18:09:30.460 File '/var/log/messages' does not exist. Monitoring bypassed
+18:09:30.463 18:09:30.460 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:09:30.517 18:09:30.517 Deleting old file structure.
+18:09:30.517 18:09:30.517 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+18:09:30.519 18:09:30.519 Completed the creation of the directory list for /media/aryan/ext4sample: 6 directories.
+18:09:30.520 18:09:30.520 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:09:30.520 18:09:30.520 Writing control file for anchor=/media/aryan/ext4sample at start of run.
+18:09:30.531 18:09:30.531 Completed control file for anchor=/media/aryan/ext4sample at start of run.  dirs: 6/0 files: 8/0 sizes: 400m/0/0/0
+18:09:30.534 18:09:30.534 Completed initializeFileAnchor for fsd1: 0.02
+18:09:30.552 18:09:30.551 Started 8 threads for fwd=format,fsd=fsd1
+18:09:30.552 18:09:30.551 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+18:09:30.552 18:09:30.551 Waiting for task synchronization
+18:09:30.552 18:09:30.552 Requesting full garbage collection
+18:09:30.553 18:09:30.552 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    30 free:    93 
+18:09:30.586 18:09:30.586 GcTracker: cum:   2 intv:  2 ms:      32 mss:  0.00% Heap_MB max:   911 curr:   123 used:    17 free:   106 
+18:09:30.586 18:09:30.586 task_wait_start_complete() end
+
+<a name="_914424520"></a><i><b>18:09:31.001 Starting RD=format_for_rd1</b></i>
+
+18:09:31.003 18:09:31.002 task_run_all(): 9 tasks
+18:09:31.153 18:09:31.152 Message to master: anchor=/media/aryan/ext4sample mkdir complete.
+18:09:31.290 18:09:31.290 Message to master: anchor=/media/aryan/ext4sample create complete.
+18:09:31.395 18:09:31.394 
+18:09:31.395 18:09:31.394 Miscellaneous statistics:
+18:09:31.395 18:09:31.395 FILE_CREATES        Files created:                                    8
+18:09:31.395 18:09:31.395 DIRECTORY_CREATES   Directories created:                              6
+18:09:31.396 18:09:31.395 FILE_DELETES        Files deleted:                                    8
+18:09:31.396 18:09:31.396 DIRECTORY_DELETES   Directories deleted:                              6
+18:09:31.396 18:09:31.396 WRITE_OPENS         Files opened for write activity:                  8
+18:09:31.397 18:09:31.396 DIR_EXISTS          Directory may not exist (yet):                    5
+18:09:31.397 18:09:31.397 FILE_CLOSES         Close requests:                                   8
+18:09:31.397 18:09:31.397 
+18:09:31.398 18:09:31.398 Java Heap in MB. max:  910.500; current:  123.000; used:   25.251; free:   97.749
+18:09:31.398 18:09:31.398 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+18:09:32.138 18:09:32.138 Writing control file for anchor=/media/aryan/ext4sample at end of run.
+18:09:32.146 18:09:32.146 Completed control file for anchor=/media/aryan/ext4sample at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/8/400m
+18:09:32.147 18:09:32.146 End of run
+18:09:32.147 18:09:32.147 **********
+18:09:32.147 
+18:09:32.147 
+18:09:32.283 18:09:32.283 Beginning of run setup
+18:09:32.283 18:09:32.283 **********************
+18:09:32.284 
+18:09:32.284 
+18:09:32.333 18:09:32.332 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+18:09:32.333 18:09:32.333 Reading control file for anchor=/media/aryan/ext4sample
+18:09:32.335 18:09:32.335 Completed reading control file.
+18:09:32.335 18:09:32.335 Completed the creation of the directory list for /media/aryan/ext4sample: 6 directories.
+18:09:32.335 18:09:32.335 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:09:32.335 18:09:32.335 No deletes and creates. Control file not cleared.
+18:09:32.336 18:09:32.335 During anchor creation for anchor=/media/aryan/ext4sample there were 6 directories and 8 files
+18:09:32.336 18:09:32.335 Completed initializeFileAnchor for fsd1: 0.00
+18:09:32.342 18:09:32.341 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+18:09:32.342 18:09:32.342 Started 2 FwgThreads for rd=rd1 For loops: None
+18:09:32.342 18:09:32.342 Waiting for task synchronization
+18:09:32.342 18:09:32.342 Requesting full garbage collection
+18:09:32.342 18:09:32.342 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    29 free:    94 
+18:09:32.365 18:09:32.364 GcTracker: cum:   4 intv:  2 ms:      20 mss:  0.00% Heap_MB max:   911 curr:   123 used:    16 free:   107 
+18:09:32.365 18:09:32.364 task_wait_start_complete() end
+
+<a name="_110718392"></a><i><b>18:09:33.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+18:09:33.003 18:09:33.002 task_run_all(): 3 tasks
+18:09:43.153 18:09:43.153 
+18:09:43.153 18:09:43.153 Miscellaneous statistics:
+18:09:43.154 18:09:43.153 WRITE_OPENS         Files opened for write activity:                  2
+18:09:43.154 18:09:43.154 FILE_CLOSES         Close requests:                                   2
+18:09:43.154 18:09:43.154 
+18:09:43.154 18:09:43.154 Java Heap in MB. max:  910.500; current:  123.000; used:   20.835; free:  102.165
+18:09:43.154 18:09:43.154 Maximum native memory allocation:    1,146,880; Current allocation:       98,304
+18:09:43.155 18:09:43.154 Writing control file for anchor=/media/aryan/ext4sample at end of run.
+18:09:43.175 18:09:43.175 Completed control file for anchor=/media/aryan/ext4sample at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/2/100m
+18:09:43.175 18:09:43.175 End of run
+18:09:43.176 18:09:43.175 **********
+18:09:43.176 
+18:09:43.176 
+18:09:43.370 18:09:43.369 Master is requesting slave shutdown
+18:09:43.370 18:09:43.370 Java Heap in MB. max:  910.500; current:  123.000; used:   21.695; free:  101.305

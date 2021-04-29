@@ -1,0 +1,93 @@
+<title>Vdbench rwzfs/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+17:58:43.563 input argument scanned: '-fToTestReadWritezfs'
+17:58:43.563 input argument scanned: '-orwzfs'
+17:58:43.564 java.vendor                   Private Build
+17:58:43.564 java.home                     /usr/lib/jvm/java-8-openjdk-amd64/jre
+17:58:43.564 java.vm.specification.version 1.8
+17:58:43.564 java.vm.version               25.275-b01
+17:58:43.564 java.vm.vendor                Private Build
+17:58:43.564 java.specification.version    1.8
+17:58:43.564 java.class.version            52.0
+17:58:43.564 user.name                     root
+17:58:43.564 user.dir                      /home/aryan/Pictures/Assignment-4/vdbench
+17:58:43.564 java.io.tmpdir                /tmp
+17:58:43.564 java.class.path               ./:./classes:./vdbench.jar
+17:58:43.564 os.name                       Linux
+17:58:43.564 os.arch                       amd64
+17:58:43.564 os.version                    5.4.0-55-generic
+17:58:43.564 sun.arch.data.model           64
+17:58:43.568 Flushing all reports
+17:58:43.602 Creating anchor for /mp,fsd=fsd1
+17:58:43.630 rd1 fsd to format: fsd1
+17:58:43.630 rd1 format on host: localhost
+17:58:43.635 Anchor size: anchor=/mp: dirs:            6; files:            8; bytes:   400.000m (419,430,400)
+17:58:43.758 Starting slave: /home/aryan/Pictures/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-17.58.43.525 -l localhost-0 -p 5570   
+17:58:44.040 Slave localhost-0 (pid  42453) connected to master 42411
+17:58:44.043 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_914424520">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_110718392">rd1 For loops: None</A>
+
+17:58:44.208 Flushing all reports
+17:58:44.209 slv=localhost-0 fwd=format fsd=fsd1 anchor=/mp threads= 8 skew= 0.00 operation=read 
+17:58:44.239 Waiting for synchronization of all slaves
+17:58:44.539 Synchronization of all slaves complete
+
+<a name="_914424520"></a><i><b>17:58:45.001 Starting RD=format_for_rd1</b></i>
+
+17:58:45.551 localhost-0: anchor=/mp mkdir complete.
+17:58:45.840 localhost-0: anchor=/mp create complete.
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+17:58:46.103            1 3200.0  0.639  44.6 15.7   0.0    0.0  0.000 3200.0  0.639  0.00 400.0 400.00  131072   6.0  0.075   6.0  0.154   8.0 264.26   8.0  1.734   8.0  0.059   8.0  1.318
+17:58:46.152      avg_2-1    NaN  0.000   NaN  NaN   0.0    NaN  0.000    NaN  0.000   NaN   NaN    NaN       0   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000
+17:58:46.153      std_2-1                                                                                                                                                                    
+17:58:46.154      max_2-1                                                                                                                                                                    
+17:58:46.278 
+17:58:46.278 Miscellaneous statistics:
+17:58:46.278 (These statistics do not include activity between the last reported interval and shutdown.)
+17:58:46.278 FILE_CREATES        Files created:                                    8          8/sec
+17:58:46.278 DIRECTORY_CREATES   Directories created:                              6          6/sec
+17:58:46.278 FILE_DELETES        Files deleted:                                    8          8/sec
+17:58:46.279 DIRECTORY_DELETES   Directories deleted:                              6          6/sec
+17:58:46.279 WRITE_OPENS         Files opened for write activity:                  8          8/sec
+17:58:46.279 DIR_EXISTS          Directory may not exist (yet):                    5          5/sec
+17:58:46.280 FILE_CLOSES         Close requests:                                   8          8/sec
+17:58:46.280 
+17:58:46.280 Flushing all reports
+17:58:46.281 Java Heap in MB. max:  455.500; current:   77.500; used:   19.936; free:   57.564
+17:58:46.315 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/mp threads= 2 skew= 0.00 operation=read 
+17:58:46.318 Waiting for synchronization of all slaves
+17:58:46.418 Synchronization of all slaves complete
+
+<a name="_110718392"></a><i><b>17:58:47.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+17:58:48.024            1   71.0  0.102  32.1 5.37  49.3   35.0  0.079   36.0  0.125  0.41  0.42   0.83   12288   0.0  0.000   0.0  0.000   0.0  0.000   2.0  0.377   0.0  0.000   0.0  0.000
+17:58:49.018            2  116.0  0.071  28.9 7.34  55.2   64.0  0.063   52.0  0.079  0.75  0.61   1.36   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:50.023            3  109.0  0.078  27.6 6.64  49.5   54.0  0.069   55.0  0.086  0.63  0.64   1.28   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:51.009            4   82.0  0.084  30.8 8.58  48.8   40.0  0.070   42.0  0.097  0.47  0.49   0.96   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:52.007            5  103.0  0.079  33.6 13.0  55.3   57.0  0.061   46.0  0.102  0.67  0.54   1.21   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:53.007            6   96.0  0.112  37.9 20.2  42.7   41.0  0.094   55.0  0.126  0.48  0.64   1.13   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:54.010            7   95.0  0.112  26.8 7.47  44.2   42.0  0.106   53.0  0.116  0.49  0.62   1.11   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:55.031            8  118.0  0.110  31.4 6.08  41.5   49.0  0.094   69.0  0.121  0.57  0.81   1.38   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:56.017            9  104.0  0.111  29.0 6.77  44.2   46.0  0.086   58.0  0.131  0.54  0.68   1.22   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:57.011           10   88.0  0.102  28.6 6.05  47.7   42.0  0.079   46.0  0.124  0.49  0.54   1.03   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:57.021     avg_2-10  101.2  0.095  30.5 9.11  47.7   48.3  0.079   52.9  0.110  0.57  0.62   1.19   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:58:57.021     std_2-10                                   8.4  0.052    8.0  0.064                                                                                                         
+17:58:57.022     max_2-10                                  64.0  0.541   69.0  0.632                                                                          0.553                          
+17:58:57.244 
+17:58:57.244 Miscellaneous statistics:
+17:58:57.244 (These statistics do not include activity between the last reported interval and shutdown.)
+17:58:57.244 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+17:58:57.244 
+17:58:57.244 Flushing all reports
+17:58:57.244 Java Heap in MB. max:  455.500; current:   77.500; used:   41.479; free:   36.021
+17:58:57.278 Ending Reporter
+17:58:58.310 Vdbench execution completed successfully. Output directory: /home/aryan/Pictures/Assignment-4/vdbench/rwzfs 
+
+17:58:59.314 Java Heap in MB. max:  455.500; current:   77.500; used:   16.599; free:   60.901

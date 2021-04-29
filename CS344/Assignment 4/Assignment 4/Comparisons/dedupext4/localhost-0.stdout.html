@@ -1,0 +1,165 @@
+<title>Vdbench dedupext4/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+18:09:01.275 18:09:01.273 SlaveJvm execution parameter:  '-m localhost'
+18:09:01.275 18:09:01.274 SlaveJvm execution parameter:  '-n localhost-10-201125-18.09.00.878'
+18:09:01.275 18:09:01.274 SlaveJvm execution parameter:  '-l localhost-0'
+18:09:01.276 18:09:01.274 SlaveJvm execution parameter:  '-p 5570'
+18:09:01.276 18:09:01.274 SlaveJvm positional parameter: 'SlaveJvm'
+18:09:01.425 18:09:01.423 successfully connected to master localhost
+18:09:01.425 18:09:01.424 Connection to localhost using port 5570 successful
+18:09:01.595 18:09:01.594 ticks_per_second: 100
+18:09:01.603 18:09:01.603 execute(): ls -l /media/aryan/ext4sample
+18:09:01.624 18:09:01.624 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_2143192188">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1100439041">rd1 For loops: None</A>
+
+18:09:01.818 18:09:01.818 Beginning of run setup
+18:09:01.819 18:09:01.818 **********************
+18:09:01.819 
+18:09:01.819 
+18:09:01.820 18:09:01.818 File '/var/log/messages' does not exist. Monitoring bypassed
+18:09:01.820 18:09:01.818 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:09:01.871 18:09:01.871 Deleting old file structure.
+18:09:01.872 18:09:01.872 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+18:09:01.873 18:09:01.873 Completed the creation of the directory list for /media/aryan/ext4sample: 6 directories.
+18:09:01.874 18:09:01.874 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:09:01.876 18:09:01.876 Created flipflop bitmap for fsd1. 1 bitmaps for a total of 102,400 bits.
+18:09:01.876 18:09:01.876 Creating bitmap for unique blocks for fsd=fsd1. 1 bitmaps for a total of 102,400 bits, identifying 0 unique blocks
+18:09:01.877 18:09:01.877 Writing control file for anchor=/media/aryan/ext4sample at start of run.
+18:09:01.888 18:09:01.887 Completed control file for anchor=/media/aryan/ext4sample at start of run.  dirs: 6/0 files: 8/0 sizes: 400m/0/0/0
+18:09:01.891 18:09:01.890 Completed initializeFileAnchor for fsd1: 0.02
+18:09:01.918 18:09:01.918 Started 8 threads for fwd=format,fsd=fsd1
+18:09:01.918 18:09:01.918 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+18:09:01.918 18:09:01.918 Waiting for task synchronization
+18:09:01.919 18:09:01.918 Requesting full garbage collection
+18:09:01.919 18:09:01.919 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    32 free:    91 
+18:09:01.955 18:09:01.955 GcTracker: cum:   2 intv:  2 ms:      34 mss:  0.00% Heap_MB max:   911 curr:   123 used:    17 free:   106 
+18:09:01.955 18:09:01.955 task_wait_start_complete() end
+
+<a name="_2143192188"></a><i><b>18:09:03.001 Starting RD=format_for_rd1</b></i>
+
+18:09:03.002 18:09:03.002 task_run_all(): 9 tasks
+18:09:03.442 18:09:03.442 Erasing Data Validation map: fsd1
+18:09:03.443 18:09:03.442 Erasing Data Validation map: fsd1
+18:09:03.514 18:09:03.513 Erasing Data Validation map: fsd1
+18:09:03.515 18:09:03.514 Erasing Data Validation map: fsd1
+18:09:03.515 18:09:03.514 Erasing Data Validation map: fsd1
+18:09:03.516 18:09:03.516 Erasing Data Validation map: fsd1
+18:09:03.517 18:09:03.517 Erasing Data Validation map: fsd1
+18:09:03.519 18:09:03.518 Erasing Data Validation map: fsd1
+18:09:03.550 18:09:03.550 Message to master: anchor=/media/aryan/ext4sample mkdir complete.
+18:09:03.702 18:09:03.701 Message to master: anchor=/media/aryan/ext4sample create complete.
+18:09:03.808 18:09:03.807 
+18:09:03.808 18:09:03.808 Miscellaneous statistics:
+18:09:03.808 18:09:03.808 FILE_CREATES        Files created:                                    8
+18:09:03.809 18:09:03.808 DIRECTORY_CREATES   Directories created:                              6
+18:09:03.809 18:09:03.809 FILE_DELETES        Files deleted:                                    8
+18:09:03.810 18:09:03.809 DIRECTORY_DELETES   Directories deleted:                              6
+18:09:03.810 18:09:03.810 WRITE_OPENS         Files opened for write activity:                  8
+18:09:03.811 18:09:03.810 DIR_EXISTS          Directory may not exist (yet):                    5
+18:09:03.811 18:09:03.811 FILE_CLOSES         Close requests:                                   8
+18:09:03.811 18:09:03.811 
+18:09:03.814 18:09:03.813 Dedup counters. Bytes written: 400m across: 0 (0.0%) on_sd: 0 (0.0%) dups: 400m (100.0%) resulting dedup=50.0% (2.00:1)
+18:09:03.821 18:09:03.820 Dedup options: 
+18:09:03.821 dedup_type:                            1
+18:09:03.821 dedup_ratio:                        2.00
+18:09:03.821 dedup_unit:                        4,096
+18:09:03.822 flipflop:                             no
+18:09:03.822 hot_dedup_sets:                        0
+18:09:03.822 hot_dedup_blocks:                      0
+18:09:03.822 dedup_sets_reqd:                     50%
+18:09:03.822 dedup_sets_used:                  51,200
+18:09:03.822 
+18:09:03.822 unique_blocks:                         0
+18:09:03.822 duplicate_blocks:                102,400 (including 51,200 originals)
+18:09:03.823 dedup_pct:                         50.00
+18:09:03.823 dedup_adjusted:                     0.00
+18:09:03.823 total_size:                         400m
+18:09:03.823 unit_blocks:                     102,400
+18:09:03.823 
+18:09:03.823 Info only reliable if xfersize is multiple of dedupunit:
+18:09:03.823 uniques_written:                       0; expected 0; delta 0 
+18:09:03.823 duplicates_written:              102,400; expected 102,400; delta 0 
+18:09:03.824 Total writes:                    102,400; delta 0
+18:09:03.824 flipflops:                             0
+18:09:03.824 
+18:09:03.824 Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+18:09:03.824 Dsim counts: Duplicates:          51,200
+18:09:03.824 Dsim counts: Ratio:                 2.00 (2.00000)
+18:09:03.824 
+18:09:03.824 18:09:03.821 Java Heap in MB. max:  910.500; current:  123.000; used:   26.354; free:   96.646
+18:09:03.824 18:09:03.822 Maximum native memory allocation:    1,081,344; Current allocation:    1,081,344
+18:09:04.119 18:09:04.119 Writing control file for anchor=/media/aryan/ext4sample at end of run.
+18:09:04.127 18:09:04.127 Completed control file for anchor=/media/aryan/ext4sample at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/8/400m
+18:09:04.127 18:09:04.127 End of run
+18:09:04.128 18:09:04.127 **********
+18:09:04.128 
+18:09:04.128 
+18:09:04.276 18:09:04.276 Beginning of run setup
+18:09:04.276 18:09:04.276 **********************
+18:09:04.276 
+18:09:04.276 
+18:09:04.320 18:09:04.319 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+18:09:04.320 18:09:04.320 Reading control file for anchor=/media/aryan/ext4sample
+18:09:04.321 18:09:04.321 Completed reading control file.
+18:09:04.321 18:09:04.321 Completed the creation of the directory list for /media/aryan/ext4sample: 6 directories.
+18:09:04.322 18:09:04.322 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:09:04.322 18:09:04.322 No deletes and creates. Control file not cleared.
+18:09:04.322 18:09:04.322 During anchor creation for anchor=/media/aryan/ext4sample there were 6 directories and 8 files
+18:09:04.322 18:09:04.322 Completed initializeFileAnchor for fsd1: 0.00
+18:09:04.326 18:09:04.326 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+18:09:04.326 18:09:04.326 Started 2 FwgThreads for rd=rd1 For loops: None
+18:09:04.326 18:09:04.326 Waiting for task synchronization
+18:09:04.326 18:09:04.326 Requesting full garbage collection
+18:09:04.326 18:09:04.326 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    30 free:    93 
+18:09:04.351 18:09:04.350 GcTracker: cum:   4 intv:  2 ms:      22 mss:  0.00% Heap_MB max:   911 curr:   123 used:    17 free:   106 
+18:09:04.351 18:09:04.350 task_wait_start_complete() end
+
+<a name="_1100439041"></a><i><b>18:09:05.002 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+18:09:05.003 18:09:05.003 task_run_all(): 3 tasks
+18:09:15.146 18:09:15.146 
+18:09:15.146 18:09:15.146 Miscellaneous statistics:
+18:09:15.146 18:09:15.146 WRITE_OPENS         Files opened for write activity:                  2
+18:09:15.146 18:09:15.146 FILE_CLOSES         Close requests:                                   2
+18:09:15.147 18:09:15.146 
+18:09:15.147 18:09:15.147 Dedup counters. Bytes written: 5.730m across: 0 (0.0%) on_sd: 0 (0.0%) dups: 5.730m (100.0%) resulting dedup=50.0% (2.00:1)
+18:09:15.151 18:09:15.150 Dedup options: 
+18:09:15.151 dedup_type:                            1
+18:09:15.151 dedup_ratio:                        2.00
+18:09:15.151 dedup_unit:                        4,096
+18:09:15.151 flipflop:                             no
+18:09:15.151 hot_dedup_sets:                        0
+18:09:15.151 hot_dedup_blocks:                      0
+18:09:15.151 dedup_sets_reqd:                     50%
+18:09:15.151 dedup_sets_used:                  51,200
+18:09:15.151 
+18:09:15.151 unique_blocks:                         0
+18:09:15.151 duplicate_blocks:                102,400 (including 51,200 originals)
+18:09:15.151 dedup_pct:                         50.00
+18:09:15.151 dedup_adjusted:                     0.00
+18:09:15.151 total_size:                         400m
+18:09:15.151 unit_blocks:                     102,400
+18:09:15.151 
+18:09:15.151 Info only reliable if xfersize is multiple of dedupunit:
+18:09:15.151 uniques_written:                       0; expected 0; delta 0 
+18:09:15.151 duplicates_written:                1,467; expected 102,400; delta -100,933 
+18:09:15.151 Total writes:                      1,467; delta -100,933
+18:09:15.151 flipflops:                             0
+18:09:15.151 
+18:09:15.151 Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+18:09:15.151 Dsim counts: Duplicates:          51,200
+18:09:15.151 Dsim counts: Ratio:                 2.00 (2.00000)
+18:09:15.151 
+18:09:15.152 18:09:15.151 Java Heap in MB. max:  910.500; current:  123.000; used:   21.181; free:  101.819
+18:09:15.152 18:09:15.151 Maximum native memory allocation:    1,212,416; Current allocation:      131,072
+18:09:15.152 18:09:15.151 Writing control file for anchor=/media/aryan/ext4sample at end of run.
+18:09:15.186 18:09:15.186 Completed control file for anchor=/media/aryan/ext4sample at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/2/100m
+18:09:15.186 18:09:15.186 End of run
+18:09:15.186 18:09:15.186 **********
+18:09:15.186 
+18:09:15.186 
+18:09:15.715 18:09:15.715 Master is requesting slave shutdown
+18:09:15.715 18:09:15.715 Java Heap in MB. max:  910.500; current:  123.000; used:   22.033; free:  100.967

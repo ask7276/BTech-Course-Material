@@ -1,0 +1,165 @@
+<title>Vdbench dedupzfs/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+18:10:40.158 18:10:40.157 SlaveJvm execution parameter:  '-m localhost'
+18:10:40.159 18:10:40.158 SlaveJvm execution parameter:  '-n localhost-10-201125-18.10.39.774'
+18:10:40.160 18:10:40.158 SlaveJvm execution parameter:  '-l localhost-0'
+18:10:40.161 18:10:40.158 SlaveJvm execution parameter:  '-p 5570'
+18:10:40.161 18:10:40.158 SlaveJvm positional parameter: 'SlaveJvm'
+18:10:40.304 18:10:40.302 successfully connected to master localhost
+18:10:40.304 18:10:40.304 Connection to localhost using port 5570 successful
+18:10:40.472 18:10:40.472 ticks_per_second: 100
+18:10:40.481 18:10:40.480 execute(): ls -l /mp
+18:10:40.505 18:10:40.505 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_2143192188">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1100439041">rd1 For loops: None</A>
+
+18:10:40.693 18:10:40.693 Beginning of run setup
+18:10:40.693 18:10:40.693 File '/var/log/messages' does not exist. Monitoring bypassed
+18:10:40.694 18:10:40.693 **********************
+18:10:40.694 
+18:10:40.694 
+18:10:40.694 18:10:40.693 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:10:40.748 18:10:40.748 Deleting old file structure.
+18:10:40.749 18:10:40.748 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+18:10:40.750 18:10:40.750 Completed the creation of the directory list for /mp: 6 directories.
+18:10:40.751 18:10:40.750 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:10:40.752 18:10:40.752 Created flipflop bitmap for fsd1. 1 bitmaps for a total of 102,400 bits.
+18:10:40.753 18:10:40.752 Creating bitmap for unique blocks for fsd=fsd1. 1 bitmaps for a total of 102,400 bits, identifying 0 unique blocks
+18:10:40.753 18:10:40.753 Writing control file for anchor=/mp at start of run.
+18:10:40.763 18:10:40.763 Completed control file for anchor=/mp at start of run.  dirs: 6/0 files: 8/0 sizes: 400m/0/0/0
+18:10:40.767 18:10:40.767 Completed initializeFileAnchor for fsd1: 0.02
+18:10:40.790 18:10:40.790 Started 8 threads for fwd=format,fsd=fsd1
+18:10:40.790 18:10:40.790 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+18:10:40.790 18:10:40.790 Waiting for task synchronization
+18:10:40.790 18:10:40.790 Requesting full garbage collection
+18:10:40.791 18:10:40.790 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    32 free:    91 
+18:10:40.829 18:10:40.828 GcTracker: cum:   2 intv:  2 ms:      36 mss:  0.00% Heap_MB max:   911 curr:   123 used:    17 free:   106 
+18:10:40.829 18:10:40.828 task_wait_start_complete() end
+
+<a name="_2143192188"></a><i><b>18:10:41.001 Starting RD=format_for_rd1</b></i>
+
+18:10:41.002 18:10:41.002 task_run_all(): 9 tasks
+18:10:41.294 18:10:41.294 Erasing Data Validation map: fsd1
+18:10:41.388 18:10:41.387 Erasing Data Validation map: fsd1
+18:10:41.388 18:10:41.388 Erasing Data Validation map: fsd1
+18:10:41.389 18:10:41.389 Erasing Data Validation map: fsd1
+18:10:41.389 18:10:41.389 Erasing Data Validation map: fsd1
+18:10:41.390 18:10:41.390 Erasing Data Validation map: fsd1
+18:10:41.390 18:10:41.390 Erasing Data Validation map: fsd1
+18:10:41.393 18:10:41.392 Erasing Data Validation map: fsd1
+18:10:41.424 18:10:41.424 Message to master: anchor=/mp mkdir complete.
+18:10:41.682 18:10:41.681 Message to master: anchor=/mp create complete.
+18:10:41.795 18:10:41.794 
+18:10:41.795 18:10:41.794 Miscellaneous statistics:
+18:10:41.795 18:10:41.795 FILE_CREATES        Files created:                                    8
+18:10:41.796 18:10:41.795 DIRECTORY_CREATES   Directories created:                              6
+18:10:41.796 18:10:41.795 FILE_DELETES        Files deleted:                                    8
+18:10:41.796 18:10:41.795 DIRECTORY_DELETES   Directories deleted:                              6
+18:10:41.796 18:10:41.795 WRITE_OPENS         Files opened for write activity:                  8
+18:10:41.796 18:10:41.795 DIR_EXISTS          Directory may not exist (yet):                    5
+18:10:41.796 18:10:41.795 FILE_CLOSES         Close requests:                                   8
+18:10:41.796 18:10:41.796 
+18:10:41.796 18:10:41.796 Dedup counters. Bytes written: 400m across: 0 (0.0%) on_sd: 0 (0.0%) dups: 400m (100.0%) resulting dedup=50.0% (2.00:1)
+18:10:41.803 18:10:41.803 Dedup options: 
+18:10:41.803 dedup_type:                            1
+18:10:41.803 dedup_ratio:                        2.00
+18:10:41.803 dedup_unit:                        4,096
+18:10:41.803 flipflop:                             no
+18:10:41.803 hot_dedup_sets:                        0
+18:10:41.803 hot_dedup_blocks:                      0
+18:10:41.803 dedup_sets_reqd:                     50%
+18:10:41.803 dedup_sets_used:                  51,200
+18:10:41.804 
+18:10:41.804 unique_blocks:                         0
+18:10:41.804 duplicate_blocks:                102,400 (including 51,200 originals)
+18:10:41.804 dedup_pct:                         50.00
+18:10:41.804 dedup_adjusted:                     0.00
+18:10:41.804 total_size:                         400m
+18:10:41.804 unit_blocks:                     102,400
+18:10:41.804 
+18:10:41.804 Info only reliable if xfersize is multiple of dedupunit:
+18:10:41.804 uniques_written:                       0; expected 0; delta 0 
+18:10:41.804 duplicates_written:              102,400; expected 102,400; delta 0 
+18:10:41.804 Total writes:                    102,400; delta 0
+18:10:41.804 flipflops:                             0
+18:10:41.804 
+18:10:41.804 Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+18:10:41.804 Dsim counts: Duplicates:          51,200
+18:10:41.804 Dsim counts: Ratio:                 2.00 (2.00000)
+18:10:41.804 
+18:10:41.810 18:10:41.810 Java Heap in MB. max:  910.500; current:  123.000; used:   26.353; free:   96.647
+18:10:41.811 18:10:41.811 Maximum native memory allocation:    1,081,344; Current allocation:    1,081,344
+18:10:42.165 18:10:42.165 Writing control file for anchor=/mp at end of run.
+18:10:42.182 18:10:42.182 Completed control file for anchor=/mp at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/8/400m
+18:10:42.182 18:10:42.182 End of run
+18:10:42.182 18:10:42.182 **********
+18:10:42.182 
+18:10:42.183 
+18:10:42.358 18:10:42.358 Beginning of run setup
+18:10:42.358 18:10:42.358 **********************
+18:10:42.358 
+18:10:42.359 
+18:10:42.402 18:10:42.401 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+18:10:42.402 18:10:42.402 Reading control file for anchor=/mp
+18:10:42.403 18:10:42.403 Completed reading control file.
+18:10:42.403 18:10:42.403 Completed the creation of the directory list for /mp: 6 directories.
+18:10:42.403 18:10:42.403 Generated 8 file names; total anchor size: 400m (419,430,400)
+18:10:42.403 18:10:42.403 No deletes and creates. Control file not cleared.
+18:10:42.403 18:10:42.403 During anchor creation for anchor=/mp there were 6 directories and 8 files
+18:10:42.404 18:10:42.404 Completed initializeFileAnchor for fsd1: 0.00
+18:10:42.409 18:10:42.408 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+18:10:42.409 18:10:42.409 Started 2 FwgThreads for rd=rd1 For loops: None
+18:10:42.409 18:10:42.409 Waiting for task synchronization
+18:10:42.410 18:10:42.409 Requesting full garbage collection
+18:10:42.411 18:10:42.410 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    30 free:    93 
+18:10:42.437 18:10:42.436 GcTracker: cum:   4 intv:  2 ms:      25 mss:  0.00% Heap_MB max:   911 curr:   123 used:    17 free:   106 
+18:10:42.437 18:10:42.437 task_wait_start_complete() end
+
+<a name="_1100439041"></a><i><b>18:10:43.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+18:10:43.002 18:10:43.002 task_run_all(): 3 tasks
+18:10:53.139 18:10:53.139 
+18:10:53.140 18:10:53.139 Miscellaneous statistics:
+18:10:53.140 18:10:53.139 WRITE_OPENS         Files opened for write activity:                  2
+18:10:53.140 18:10:53.140 FILE_CLOSES         Close requests:                                   2
+18:10:53.140 18:10:53.140 
+18:10:53.140 18:10:53.140 Dedup counters. Bytes written: 5.625m across: 0 (0.0%) on_sd: 0 (0.0%) dups: 5.625m (100.0%) resulting dedup=50.0% (2.00:1)
+18:10:53.143 18:10:53.143 Dedup options: 
+18:10:53.143 dedup_type:                            1
+18:10:53.143 dedup_ratio:                        2.00
+18:10:53.143 dedup_unit:                        4,096
+18:10:53.143 flipflop:                             no
+18:10:53.143 hot_dedup_sets:                        0
+18:10:53.143 hot_dedup_blocks:                      0
+18:10:53.143 dedup_sets_reqd:                     50%
+18:10:53.143 dedup_sets_used:                  51,200
+18:10:53.143 
+18:10:53.143 unique_blocks:                         0
+18:10:53.143 duplicate_blocks:                102,400 (including 51,200 originals)
+18:10:53.143 dedup_pct:                         50.00
+18:10:53.143 dedup_adjusted:                     0.00
+18:10:53.143 total_size:                         400m
+18:10:53.143 unit_blocks:                     102,400
+18:10:53.143 
+18:10:53.143 Info only reliable if xfersize is multiple of dedupunit:
+18:10:53.143 uniques_written:                       0; expected 0; delta 0 
+18:10:53.143 duplicates_written:                1,440; expected 102,400; delta -100,960 
+18:10:53.143 Total writes:                      1,440; delta -100,960
+18:10:53.143 flipflops:                             0
+18:10:53.144 
+18:10:53.144 Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+18:10:53.144 Dsim counts: Duplicates:          51,200
+18:10:53.144 Dsim counts: Ratio:                 2.00 (2.00000)
+18:10:53.144 
+18:10:53.144 18:10:53.143 Java Heap in MB. max:  910.500; current:  123.000; used:   20.366; free:  102.634
+18:10:53.144 18:10:53.143 Maximum native memory allocation:    1,212,416; Current allocation:      131,072
+18:10:53.144 18:10:53.144 Writing control file for anchor=/mp at end of run.
+18:10:53.153 18:10:53.152 Completed control file for anchor=/mp at end of run.  dirs: 6/6 files: 8/8 sizes: 400m/400m/2/100m
+18:10:53.154 18:10:53.154 End of run
+18:10:53.154 18:10:53.154 **********
+18:10:53.154 
+18:10:53.154 
+18:10:53.618 18:10:53.618 Master is requesting slave shutdown
+18:10:53.618 18:10:53.618 Java Heap in MB. max:  910.500; current:  123.000; used:   21.219; free:  101.781

@@ -1,0 +1,201 @@
+<title>Vdbench dedupzfs/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+18:10:39.818 input argument scanned: '-fToTestDedupzfs'
+18:10:39.820 input argument scanned: '-odedupzfs'
+18:10:39.820 java.vendor                   Private Build
+18:10:39.820 java.home                     /usr/lib/jvm/java-8-openjdk-amd64/jre
+18:10:39.820 java.vm.specification.version 1.8
+18:10:39.820 java.vm.version               25.275-b01
+18:10:39.820 java.vm.vendor                Private Build
+18:10:39.820 java.specification.version    1.8
+18:10:39.820 java.class.version            52.0
+18:10:39.820 user.name                     root
+18:10:39.820 user.dir                      /home/aryan/Pictures/Assignment-4/vdbench
+18:10:39.820 java.io.tmpdir                /tmp
+18:10:39.820 java.class.path               ./:./classes:./vdbench.jar
+18:10:39.820 os.name                       Linux
+18:10:39.820 os.arch                       amd64
+18:10:39.820 os.version                    5.4.0-55-generic
+18:10:39.820 sun.arch.data.model           64
+18:10:39.823 Flushing all reports
+18:10:39.862 Creating anchor for /mp,fsd=fsd1
+18:10:39.893 rd1 fsd to format: fsd1
+18:10:39.894 rd1 format on host: localhost
+18:10:39.901 Anchor size: anchor=/mp: dirs:            6; files:            8; bytes:   400.000m (419,430,400)
+18:10:40.032 Starting slave: /home/aryan/Pictures/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-18.10.39.774 -l localhost-0 -p 5570   
+18:10:40.336 Slave localhost-0 (pid  48561) connected to master 48521
+18:10:40.425 All slaves are now connected
+18:10:40.518 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        2.00
+dedup_unit:                        4,096
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                     50%
+dedup_sets_used:                  51,200
+
+unique_blocks:                         0
+duplicate_blocks:                102,400 (including 51,200 originals)
+dedup_pct:                         50.00
+dedup_adjusted:                     0.00
+total_size:                         400m
+unit_blocks:                     102,400
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 0; delta 0 
+duplicates_written:                    0; expected 102,400; delta -102,400 
+Total writes:                          0; delta -102,400
+flipflops:                             0
+
+Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+Dsim counts: Duplicates:          51,200
+Dsim counts: Ratio:                 2.00 (2.00000)
+
+18:10:40.524 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        2.00
+dedup_unit:                        4,096
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                     50%
+dedup_sets_used:                  51,200
+
+unique_blocks:                         0
+duplicate_blocks:                102,400 (including 51,200 originals)
+dedup_pct:                         50.00
+dedup_adjusted:                     0.00
+total_size:                         400m
+unit_blocks:                     102,400
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 0; delta 0 
+duplicates_written:                    0; expected 102,400; delta -102,400 
+Total writes:                          0; delta -102,400
+flipflops:                             0
+
+Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+Dsim counts: Duplicates:          51,200
+Dsim counts: Ratio:                 2.00 (2.00000)
+
+
+Link to Run Definitions:         <A HREF="#_2143192188">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1100439041">rd1 For loops: None</A>
+
+18:10:40.588 Flushing all reports
+18:10:40.589 slv=localhost-0 fwd=format fsd=fsd1 anchor=/mp threads= 8 skew= 0.00 operation=read 
+18:10:40.591 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        2.00
+dedup_unit:                        4,096
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                     50%
+dedup_sets_used:                  51,200
+
+unique_blocks:                         0
+duplicate_blocks:                102,400 (including 51,200 originals)
+dedup_pct:                         50.00
+dedup_adjusted:                     0.00
+total_size:                         400m
+unit_blocks:                     102,400
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 0; delta 0 
+duplicates_written:                    0; expected 102,400; delta -102,400 
+Total writes:                          0; delta -102,400
+flipflops:                             0
+
+Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+Dsim counts: Duplicates:          51,200
+Dsim counts: Ratio:                 2.00 (2.00000)
+
+18:10:40.618 Waiting for synchronization of all slaves
+18:10:40.919 Synchronization of all slaves complete
+
+<a name="_2143192188"></a><i><b>18:10:41.001 Starting RD=format_for_rd1</b></i>
+
+18:10:41.425 localhost-0: anchor=/mp mkdir complete.
+18:10:41.682 localhost-0: anchor=/mp create complete.
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+18:10:42.096            1 3200.0  0.465  47.4 18.1   0.0    0.0  0.000 3200.0  0.465  0.00 400.0 400.00  131072   6.0  0.069   6.0  0.113   8.0 219.73   8.0  2.363   8.0  0.071   8.0  1.578
+18:10:42.138      avg_2-1    NaN  0.000   NaN  NaN   0.0    NaN  0.000    NaN  0.000   NaN   NaN    NaN       0   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000   NaN  0.000
+18:10:42.139      std_2-1                                                                                                                                                                    
+18:10:42.139      max_2-1                                                                                                                                                                    
+18:10:42.267 
+18:10:42.267 Miscellaneous statistics:
+18:10:42.267 (These statistics do not include activity between the last reported interval and shutdown.)
+18:10:42.268 FILE_CREATES        Files created:                                    8          8/sec
+18:10:42.269 DIRECTORY_CREATES   Directories created:                              6          6/sec
+18:10:42.269 FILE_DELETES        Files deleted:                                    8          8/sec
+18:10:42.270 DIRECTORY_DELETES   Directories deleted:                              6          6/sec
+18:10:42.271 WRITE_OPENS         Files opened for write activity:                  8          8/sec
+18:10:42.271 DIR_EXISTS          Directory may not exist (yet):                    5          5/sec
+18:10:42.272 FILE_CLOSES         Close requests:                                   8          8/sec
+18:10:42.272 
+18:10:42.272 Flushing all reports
+18:10:42.275 Java Heap in MB. max:  455.500; current:   77.500; used:   21.227; free:   56.273
+18:10:42.346 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/mp threads= 2 skew= 0.00 operation=read 
+18:10:42.348 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        2.00
+dedup_unit:                        4,096
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                     50%
+dedup_sets_used:                  51,200
+
+unique_blocks:                         0
+duplicate_blocks:                102,400 (including 51,200 originals)
+dedup_pct:                         50.00
+dedup_adjusted:                     0.00
+total_size:                         400m
+unit_blocks:                     102,400
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 0; delta 0 
+duplicates_written:                    0; expected 102,400; delta -102,400 
+Total writes:                          0; delta -102,400
+flipflops:                             0
+
+Dsim counts: Hash size:           51,200 (0 uniques + 51,200 sets)
+Dsim counts: Duplicates:          51,200
+Dsim counts: Ratio:                 2.00 (2.00000)
+
+18:10:42.351 Waiting for synchronization of all slaves
+18:10:42.452 Synchronization of all slaves complete
+
+<a name="_1100439041"></a><i><b>18:10:43.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+18:10:44.022            1   59.0  0.097  40.4 7.39  45.8   27.0  0.088   32.0  0.105  0.32  0.38   0.69   12288   0.0  0.000   0.0  0.000   0.0  0.000   2.0  0.279   0.0  0.000   0.0  0.000
+18:10:45.014            2   82.0  0.124  28.9 7.22  57.3   47.0  0.150   35.0  0.089  0.55  0.41   0.96   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:46.010            3   88.0  7.864  47.1 26.0  47.7   42.0  0.093   46.0 14.959  0.49  0.54   1.03   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:47.012            4   80.0  5.099  28.0 6.89  57.5   46.0  5.548   34.0  4.493  0.54  0.40   0.94   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:48.017            5   84.0  5.238  25.2 6.71  50.0   42.0  3.906   42.0  6.570  0.49  0.49   0.98   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:49.018            6   98.0 20.530  25.8 6.50  51.0   50.0 17.231   48.0 23.966  0.59  0.56   1.15   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:50.009            7  110.0  7.040  23.6 5.45  43.6   48.0  2.158   62.0 10.820  0.56  0.73   1.29   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:51.009            8  110.0 12.156  32.1 8.09  42.7   47.0 24.446   63.0  2.987  0.55  0.74   1.29   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:52.009            9  105.0  2.330  22.9 5.45  42.9   45.0  3.186   60.0  1.689  0.53  0.70   1.23   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:53.007           10  104.0  2.442  22.1 4.89  48.1   50.0  2.515   54.0  2.374  0.59  0.63   1.22   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:53.013     avg_2-10   95.7  7.169  28.4 8.54  48.4   46.3  6.747   49.3  7.565  0.54  0.58   1.12   12288   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+18:10:53.014     std_2-10                                   3.0 52.645   11.1 55.745                                                                                                         
+18:10:53.015     max_2-10                                  50.0 810.32   63.0 831.59                                                                          0.330                          
+18:10:53.239 
+18:10:53.239 Miscellaneous statistics:
+18:10:53.239 (These statistics do not include activity between the last reported interval and shutdown.)
+18:10:53.239 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+18:10:53.239 
+18:10:53.239 Flushing all reports
+18:10:53.240 Java Heap in MB. max:  455.500; current:   77.500; used:   41.042; free:   36.458
+18:10:53.266 Ending Reporter
+18:10:53.718 Vdbench execution completed successfully. Output directory: /home/aryan/Pictures/Assignment-4/vdbench/dedupzfs 
+
+18:10:54.721 Java Heap in MB. max:  455.500; current:   77.500; used:   16.629; free:   60.871

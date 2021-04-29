@@ -1,0 +1,185 @@
+<title>Vdbench compzfs/config.html</title><pre>
+Output from script /home/aryan/Pictures/Assignment-4/vdbench/linux/config.sh: 
+
+Wednesday 25 November 2020 06:11:32 PM IST
+>>>>>uname -a
+Linux aryan-Inspiron-5570 5.4.0-55-generic #61-Ubuntu SMP Mon Nov 9 20:49:56 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Wednesday 25 November 2020 06:11:32 PM IST
+>>>>>ifconfig -a
+enp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 8c:ec:4b:11:24:99  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 50031  bytes 4584478 (4.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 50031  bytes 4584478 (4.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tun: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.8.0.14  netmask 255.255.255.0  destination 10.8.0.14
+        inet6 fd42:42:42:42::100c  prefixlen 112  scopeid 0x0<global>
+        inet6 fe80::7e85:780d:8e9e:9ad9  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 200  (UNSPEC)
+        RX packets 141143  bytes 28851392 (28.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 153928  bytes 18926548 (18.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.10  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::3c6d:2bb3:5646:4486  prefixlen 64  scopeid 0x20<link>
+        ether b0:52:16:12:b9:cb  txqueuelen 1000  (Ethernet)
+        RX packets 372100  bytes 320711848 (320.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 246372  bytes 51688178 (51.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Wednesday 25 November 2020 06:11:32 PM IST
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root)
+Wednesday 25 November 2020 06:11:32 PM IST
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,noexec,relatime,size=3995044k,nr_inodes=998761,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=804696k,mode=755)
+/dev/sda2 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+none on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=28,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=803)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+/var/lib/snapd/snaps/code_50.snap on /snap/code/50 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/code_49.snap on /snap/code/49 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_10126.snap on /snap/core/10126 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_10185.snap on /snap/core/10185 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1885.snap on /snap/core18/1885 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1932.snap on /snap/core18/1932 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core20_634.snap on /snap/core20/634 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-28-1804_128.snap on /snap/gnome-3-28-1804/128 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-28-1804_145.snap on /snap/gnome-3-28-1804/145 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-34-1804_36.snap on /snap/gnome-3-34-1804/36 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-34-1804_60.snap on /snap/gnome-3-34-1804/60 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1506.snap on /snap/gtk-common-themes/1506 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snap-store_481.snap on /snap/snap-store/481 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/nmap_1757.snap on /snap/nmap/1757 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/nmap_1849.snap on /snap/nmap/1849 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_9607.snap on /snap/snapd/9607 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snap-store_467.snap on /snap/snap-store/467 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_9721.snap on /snap/snapd/9721 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/spotify_42.snap on /snap/spotify/42 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/spotify_43.snap on /snap/spotify/43 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/yuzu_161.snap on /snap/yuzu/161 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/yuzu_162.snap on /snap/yuzu/162 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/vlc_1700.snap on /snap/vlc/1700 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/dev/sda1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+mp on /mp type zfs (rw,xattr,noacl)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=804692k,mode=700,uid=1000,gid=1000)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/fuse on /run/user/1000/doc type fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+tmpfs on /run/snapd/ns type tmpfs (rw,nosuid,nodev,noexec,relatime,size=804696k,mode=755)
+nsfs on /run/snapd/ns/snap-store.mnt type nsfs (rw)
+/var/lib/snapd/snaps/gtk-common-themes_1513.snap on /snap/gtk-common-themes/1513 type squashfs (ro,nodev,relatime,x-gdu.hide)
+VPN4Test.AppImage on /tmp/.mount_VPN4TejWwTsm type fuse.VPN4Test.AppImage (ro,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/sdb3 on /media/aryan/ext4sample type ext4 (rw,nosuid,nodev,relatime,uhelper=udisks2)
+Wednesday 25 November 2020 06:11:32 PM IST
+>>>>>memory
+MemTotal:        8046928 kB
+MemFree:         1995396 kB
+MemAvailable:    3335724 kB
+Buffers:           88308 kB
+Cached:          2657464 kB
+SwapCached:          912 kB
+Active:          3274352 kB
+Inactive:        1535212 kB
+Active(anon):    2567280 kB
+Inactive(anon):   753560 kB
+Active(file):     707072 kB
+Inactive(file):   781652 kB
+Unevictable:      232676 kB
+Mlocked:              48 kB
+SwapTotal:       2097148 kB
+SwapFree:        2051836 kB
+Dirty:              2644 kB
+Writeback:             0 kB
+AnonPages:       2295712 kB
+Mapped:           842968 kB
+Shmem:           1258452 kB
+KReclaimable:     154188 kB
+Slab:             391752 kB
+SReclaimable:     154188 kB
+SUnreclaim:       237564 kB
+KernelStack:       18452 kB
+PageTables:        38352 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6120612 kB
+Committed_AS:   12588536 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      291036 kB
+VmallocChunk:          0 kB
+Percpu:             8448 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      804996 kB
+DirectMap2M:     7479296 kB
+DirectMap1G:           0 kB
+              total        used        free      shared  buff/cache   available
+Mem:        8046928     3151572     1995396     1258452     2899960     3335724
+Low:        8046928     6051532     1995396
+High:             0           0           0
+Swap:       2097148       45312     2051836
+Wednesday 25 November 2020 06:11:33 PM IST
+>>>>>ps -ef | grep -i vdb
+root       50497   47916  0 18:11 pts/0    00:00:00 sudo ./vdbench -f ToTestCompzfs -o compzfs
+root       50498   50497  0 18:11 pts/0    00:00:00 /bin/bash ./vdbench -f ToTestCompzfs -o compzfs
+root       50500   50498  0 18:11 pts/0    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f ToTestCompzfs -o compzfs
+root       50534   50500  0 18:11 pts/0    00:00:00 /bin/bash /home/aryan/Pictures/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-18.11.32.219 -l localhost-0 -p 5570
+root       50538   50534  0 18:11 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/aryan/Pictures/Assignment-4/vdbench/:/home/aryan/Pictures/Assignment-4/vdbench/classes:/home/aryan/Pictures/Assignment-4/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-201125-18.11.32.219 -l localhost-0 -p 5570
+root       50592   50500  0 18:11 pts/0    00:00:00 /bin/bash /home/aryan/Pictures/Assignment-4/vdbench/linux/config.sh -o /home/aryan/Pictures/Assignment-4/vdbench/compzfs localhost
+root       50615   50592  0 18:11 pts/0    00:00:00 grep -i vdb
+
