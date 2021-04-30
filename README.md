@@ -6,6 +6,8 @@
 
 [CS203 - Algorithms and Data Structures](https://github.com/ask7276/BTech-Course-Material/tree/main/CS203)
 
+[CS204 - Algorithms and Data Structures Laboratory](https://github.com/ask7276/BTech-Course-Material/tree/main/CS204)
+
 [CS205 - Formal Languages, Automata Theory and Computation](https://github.com/ask7276/BTech-Course-Material/tree/main/CS205)
 
 [CS207 - Design and Analysis of Algorithms](https://github.com/ask7276/BTech-Course-Material/tree/main/CS207)
