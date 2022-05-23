@@ -1,5 +1,7 @@
 # BTech-Course-Material
 
+[BTP - Bachelor Thesis Project](https://github.com/ask7276/BTech-Course-Material/tree/main/BTP)
+
 [CS101 - Introduction to Computing](https://github.com/ask7276/BTech-Course-Material/tree/main/CS101)
 
 [CS201 - Discrete Mathematics](https://github.com/ask7276/BTech-Course-Material/tree/main/CS201)
@@ -32,11 +34,17 @@
 
 [CS361 - Machine Learning](https://github.com/ask7276/BTech-Course-Material/tree/main/CS361)
 
+[CS528 - High Performance Computing](https://github.com/ask7276/BTech-Course-Material/tree/main/CS528)
+
 [CS590 - Deep Learning](https://github.com/ask7276/BTech-Course-Material/tree/main/CS590)
 
 [EE101 - Electrical Sciences](https://github.com/ask7276/BTech-Course-Material/tree/main/EE101)
 
+[EN671 - Solar Energy](https://github.com/ask7276/BTech-Course-Material/tree/main/EN671)
+
 [HS115 - Leadership and Communication in Historical Drama](https://github.com/ask7276/BTech-Course-Material/tree/main/HS115)
+
+[HS245 - Social Choice and Welfare](https://github.com/ask7276/BTech-Course-Material/tree/main/HS245)
 
 [MA101 - Mathematics-I](https://github.com/ask7276/BTech-Course-Material/tree/main/MA101)
 
@@ -49,3 +57,5 @@
 [PH101 - Physics-I](https://github.com/ask7276/BTech-Course-Material/tree/main/PH101)
 
 [PH102 - Physics II](https://github.com/ask7276/BTech-Course-Material/tree/main/PH102)
+
+[RA505 - Robot Sensors and Vision](https://github.com/ask7276/BTech-Course-Material/tree/main/RA505)
