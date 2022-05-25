@@ -40,6 +40,8 @@
 
 [EE101 - Electrical Sciences](https://github.com/ask7276/BTech-Course-Material/tree/main/EE101)
 
+[EE693 - Advanced topics in Random Processes](https://github.com/ask7276/BTech-Course-Material/tree/main/EE693)
+
 [EN671 - Solar Energy](https://github.com/ask7276/BTech-Course-Material/tree/main/EN671)
 
 [HS115 - Leadership and Communication in Historical Drama](https://github.com/ask7276/BTech-Course-Material/tree/main/HS115)
